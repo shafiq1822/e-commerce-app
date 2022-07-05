@@ -3,17 +3,21 @@ import styled from 'styled-components'
 import { FiSearch } from 'react-icons/fi'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Badge from '@mui/material/Badge';
+import {mobile} from '../responsive'
 
 
 
 const Container = styled.div`
 height: 60px;
+${mobile({ backgroundColor: "red" })}
 `
 
 const Wrapper = styled.div`
 padding: 10px 20px;
 display: flex;
 justify-content: space-between;
+${mobile({ padding: "10px 0px" })}
+
 `
 
 const Left = styled.div`
@@ -36,6 +40,8 @@ padding: 5px;
 
 const Input = styled.input`
 border: none;
+${mobile({ width: "50px" })}
+
 `
 
 
